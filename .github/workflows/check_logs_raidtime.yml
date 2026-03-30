@@ -1,4 +1,4 @@
-nname: Check Logs Raidtime
+name: Check Logs Raidtime
 
 on:
   schedule:
