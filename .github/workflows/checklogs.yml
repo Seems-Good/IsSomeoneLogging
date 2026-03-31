@@ -27,7 +27,7 @@ jobs:
             wcl-last-seen-
 
       - name: Install dependencies
-        run: pip3 install requests
+        run: pip3 install requests --break-system-packages 
 
       - name: Run log checker
         env:
