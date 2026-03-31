@@ -26,8 +26,8 @@ jobs:
           restore-keys: |
             wcl-last-seen-
 
-      - name: Install dependencies --break-system-packages 
-        run: pip install requests 
+      - name: Install dependencies  
+        run: pip install requests --break-system-packages 
 
       - name: Run log checker
         env:
