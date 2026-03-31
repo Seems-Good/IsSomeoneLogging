@@ -37,7 +37,7 @@ jobs:
           GUILD_NAME:          ${{ secrets.GUILD_NAME }}
           GUILD_REALM:         ${{ secrets.GUILD_REALM }}
           GUILD_REGION:        ${{ secrets.GUILD_REGION }}
-        run: python checklogs.py
+        run: python3 checklogs.py
 
       - name: Save last-seen cache
         uses: actions/cache@v4
@@ -50,7 +50,7 @@ jobs:
 
       - name: Update last-run badge only
         run: |
-          python -c "
+          python3 -c "
           import json
           from datetime import datetime, timezone, timedelta
           now = datetime.now(timezone.utc)
